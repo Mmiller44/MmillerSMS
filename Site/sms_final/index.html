@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mike Miller Web Design and Development Home Page</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+	<div id="wrapper">
+	<div id="container">
+	<header>
+		<a href="#"><img class="logo" src="images/logo.png"></a>
+		<nav>
+			<a href="#"><img id="login" src="images/login2.png" alt="Login"></a>
+		</nav>
+
+		<div class="login_dropdown">
+			<a href="www.facebook.com">Facebook</a>
+			<a href="www.twitter.com">Twitter</a>
+		</div>
+	</header>
+
+	<div class="intro">
+	
+		<div class="left_para">
+			<h1>What We Do:</h1>
+			<p>Our mission is to bring educational videos to users all over the world for free. Too many places charge a fortune for educational videos. At blue moose, education is our top priority and we love being able to give it away for free! The videos are streamed from the Blue Moose servers which are located all over the world, giving you instant access to all sorts of videos.</p>
+		</div>
+
+		<div class="right_para">
+			<h3>Why eLearning?</h3>
+			<p>eLearning has been proven to teach people more effectively than traditional learning. eLearning allows users to connect over the internet from anywhere in the world, at any time. There is no need for classrooms. It is an ideal learning center for people who work odd or excessive hours, don't learn well in the classroom or don't have access to a school. </p>
+		</div>
+	</div>
+	
+		<div class="video_player">
+			<img src="images/woods1.jpg" width="1000px">
+			<div class="controls">
+					<img class="play" src="images/play.png">
+					<div id="seekDiv">
+						<input type="range" class="seek" name="seek" min="1" max="100">
+					</div>
+
+					<div class="control_images">
+						<img class="volume" src="images/volume.png">
+						<input type="range" class="volume_bar" name="volume" min="1" max="100">
+
+						<img class="microphone" src="images/microphone.png">
+						<img class="record" src="images/record.png">
+						<img class="camera" src="images/camera.png">
+					</div>
+					
+					<div class="camera-box">
+						<p>Built-in</p>
+						<p>USB Cannon 260Sx</p>
+					</div>
+
+					<div class="record-box">
+						<p>Built-in Recorder</p>
+						<p>No Devices Found</p>
+					</div>
+
+					<div class="microphone-box">
+						<p>Built-in Mic</p>
+						<p>Bluetooth iPhone</p>
+					</div>
+			</div>
+		</div>
+	
+		<div class="comments">
+			<form name="add_comment" action="" method="post">
+				<textarea rows="4" cols="50">Type your comment here.</textarea></br>
+				<input type="submit" value="Add Comment" class="submit" />
+			</form>
+
+			<p><b>AdamB34:</b> Wow! awesome video!</p>
+			<p><b>McGraw:</b> I have learned soo much...</p>
+			<p><b>Bossman60:</b> Was I supposed to learn something?</p>
+
+		</div>
+		
+		<div class="playlist">
+			<a href=""><img src="images/video_thumbnail.png" width="130" heigth="130"></a>
+			<h2>My awesome video</h2>
+			<p>This is a video description. This video is probably boring.</p>
+		</div>	
+		
+			<div class="playlist">
+			<a href=""><img src="images/video_thumbnail.png" width="130" heigth="130"></a>
+			<h2>My awesome video</h2>
+			<p>This is a video description. This video is probably boring.</p>
+		</div>	
+
+			<div class="playlist">
+			<a href=""><img src="images/video_thumbnail.png" width="130" heigth="130"></a>
+			<h2>My awesome video</h2>
+			<p>This is a video description. This video is probably boring.</p>
+		</div>
+
+		<!-- JS  -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</div> <!-- Closing "container" -->
+</div>
+</body>
+</html>

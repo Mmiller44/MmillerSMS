@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	font: 62.5% 'Marcellus', serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p, h1, h2, h3 {
+	font-size: 1.4em;
+	font-family: 'Marcellus SC', serif;
+}
+
+/*--------------------------------------------------------- Navigation -----------------------------------------------------------------*/
+
+nav {
+	float: right;
+	margin-right: 45px;
+	margin-top: 25px;
+}
+
+nav a:hover {
+	opacity: .7;
+}
+
+.login_dropdown {
+	width: 100px;
+	position: absolute;
+	top: 60px;
+	right: 55px;
+	z-index: 100;
+	text-align: center;
+}
+
+.login_dropdown a {
+	color: rgba(0,0,0,.8);
+	font-size: 1.8em;
+	line-height: 1.8;
+	font-family: 'Marcellus', serif;
+	text-decoration: none;
+	padding-bottom: 5px;
+	display: block;
+}
+
+.login_dropdown a:hover {
+	color: rgba(0,0,0,.8);
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------- Body -----------------------------------------------------------------*/
+
+body {
+	background: #f4f4f4 url(../images/background6.png) no-repeat top center fixed;
+	font: 62.5% 'Marcellus', serif;
+}
+
+header {
+	position: relative;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+#container {
+	width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+} 
+
+.intro {
+	margin-top: 150px;
+	margin-left: 45px;
+	margin-right: 45px;
+	line-height: 1.8;
+}
+
+.left_para {
+	width: 500px;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	border-right: #000 1px solid;
+}
+
+.right_para {
+	width: 500px;
+	float: right;
+}
+
+.logo {
+	margin-left: 45px;
+}
+
+h1, h2, h3 {
+	font-size: 1.8em;
+}
+
+.video_player {
+	padding-top: 400px;
+	margin-left: 45px;
+	margin-right: 45px;
+	position: relative;
+}
+
+.controls {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(244,244,244,0.4);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.play {
+	padding-left: 20px;
+}
+
+.microphone, .record, .camera, .play, .volume{
+	opacity: .6;
+}
+
+.microphone:hover, .record:hover, .camera:hover, .play:hover {
+	opacity: 1;
+}
+
+.control_images {
+	position: absolute;
+	right: 60px;
+	top: 0;
+}
+
+.controls img {
+	padding-right: 5x;
+}
+
+.camera-box, .record-box, .microphone-box {
+	width: 200px;
+	color: #f4f4f4;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+.camera-box p, .record-box p, .microphone-box p {
+	padding: 10px;
+	display: block;
+}
+
+.camera-box p:hover, .record-box p:hover, .microphone-box p:hover {
+	background-color: #f4f4f4;
+	color: rgba(0,0,0,.8);
+}
+
+.seek {
+	width: 500px;
+	height: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,.6);
+}
+
+.seek::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    height: 20px;
+    width: 10px;
+    background-color: rgba(244,244,244,.6);
+}
+
+#seekDiv {
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+	height: 10px;
+	margin-bottom: 20px;
+}
+
+.volume {
+/*	margin-right: 80px;
+*/}
+
+.comments {
+	margin-top: 50px;
+	width: 476px;
+	margin-left: 45px;
+	border-right: #000 1px solid;
+	float: left;
+	min-height: 500px;
+}
+
+.comments p {
+	font-family: 'Arial', sans-serif;
+	padding-bottom: 10px;
+
+}
+
+.submit {
+	width: 100px;
+	height: 33px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-style:none;
+	font-family: 'Marcellus SC', serif;
+	border: 1px #000 solid;
+	background-color: rgba(0,0,0,0);
+}
+
+.submit:hover {
+	color: #f4f4f4;
+	background-color: rgba(0,0,0,1);
+}
+
+.playlist {
+	margin-top: 50px;
+	width: 476px;
+	float: right;
+	margin-right: 45px;
+	overflow: hidden;
+}
+
+.playlist h2 {
+	padding-bottom: 10px;
+}
+
+.playlist img {
+	float: left;
+	border: 1px #000 solid;
+	margin-right: 20px;
+}
+
+.playlist img:hover {
+	opacity: .8;
+}
+
+b {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
