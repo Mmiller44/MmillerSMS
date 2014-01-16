@@ -114,16 +114,10 @@ $('.camera').on('click', function() {
 
 
 
-var flashReady = function()
-{
-	flash.connect('rtmpt://localhost:5080/SMSServer');
+// var flashReady = function()
+// {
+// 	flash.connect('rtmpt://localhost:5080/SMSServer');
 
-}
-
-
-
-
-
-
+// }
 
 }); // Closing the Self executing function that runs this entire page
