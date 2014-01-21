@@ -32,6 +32,28 @@ var flashReady = function()
 
 	});
 
+	$(".seek").val(0);
+
+	$('.seek').on("input change",function()
+	{
+		seekBoolean = false;
+		var seek_bar = $('.seek').val();
+		var xpos = seek_bar;
+		var seekTime = 0;
+
+		seekTime = xpos / 130 * myDuration;
+
+		flash.setTime(seekTime);
+
+	});
+
+	$('.seek').on("mouseup",function(e){
+
+		seekBoolean = true;
+		console.log(seekBoolean);
+
+	});
+
 	var mic = false;
 	var record = false;
 	var camera = false;
@@ -127,6 +149,19 @@ var flashReady = function()
 
 	});
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Volume Bar
+
+	var volume_bar = $('.volume_bar');
+	volume_bar.val(flash.getVolume());
+
+	volume_bar.on("input change",function(){
+		var volume = $('.volume_bar').val();
+		flash.setVolume(volume / 100);
+	});
+
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // SELECTING FROM THE LIST OF CAMERAS AND MICROPHONES
 
@@ -141,7 +176,8 @@ var flashReady = function()
 	});
 
 
-};
+}; // Closing Flash Ready
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,8 +211,6 @@ var divs = $('#wrapper');
 	});
 
 
-
-
 // Checking to make sure there is a connection to the server.
 var connected = function(success,error)
 {
@@ -188,5 +222,41 @@ var connected = function(success,error)
 		console.log(error);
 	}
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Seek Bar
+
+ 	seekBoolean = true;
+
+	var seekTime = function(time){
+		myTime = time;
+		console.log(seekBoolean);
+		
+		if(seekBoolean)
+		{
+			$(".seek").val(myTime);
+		}
+	};
+
+	var getDuration = function(duration){
+		myDuration = duration;
+	};
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// FIREBASE
+// var myDataRef = new Firebase('https://st3vq0l0jta.firebaseio-demo.com/');
+// myDataRef.set('User ' + name + ' says ' + text);
+
+// name and text are html type inputs .value
+
+// myDataRef.set({name: name, text: text});
+// myDataRef.push({name: name, text: text});
+// myDataRef.on('child_added', function(snapshot) {
+  	// We'll fill this in later.
+// });
+
+// var message = snapshot.val();
+// displayChatMessage(message.name, message.text);
 
 // }); // Closing the Self executing function that runs this entire page
