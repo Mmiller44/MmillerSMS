@@ -243,8 +243,8 @@ h1, h2, h3 {
 .submit {
 	width: 100px;
 	height: 33px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	border-style:none;
 	font-family: 'Marcellus SC', serif;
 	border: 1px #000 solid;
