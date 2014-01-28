@@ -278,9 +278,28 @@ h1, h2, h3 {
 	opacity: .8;
 }
 
-b {
+em {
+	font-family: 'Marcellus SC', serif;
 	font-weight: bold;
 }
+
+.chat_photo {
+	float: left;
+	clear: left;
+}
+
+.commentMessages {
+	font-size: 1.2em;
+	word-wrap: break-word;
+	width: 400px;
+	margin-left: 60px;
+	margin-bottom: 25px;
+}
+
+
+
+
+
 
 
 

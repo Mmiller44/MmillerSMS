@@ -9,12 +9,14 @@
 
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/animate.css" />
 
-        <script src="https://cdn.firebase.com/b0/firebase.js"></script>
+		<script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.2.1/firebase-simple-login.js'></script>
+        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/swfobject.js"></script>
         <script type="text/javascript" src="js/sms_setup.js"></script>
-
 </head>
 <body>
 	<div id="wrapper">
@@ -26,8 +28,8 @@
 		</nav>
 
 		<div class="login_dropdown">
-			<a href="www.facebook.com">Facebook</a>
-			<a href="www.twitter.com">Twitter</a>
+			<a href="" class="github">Github</a>
+			<a href="" class="twitter">Twitter</a>
 		</div>
 	</header>
 
@@ -82,14 +84,9 @@
 	
 		<div class="comments">
 			<form name="add_comment" action="" method="post">
-				<textarea rows="4" cols="50">Type your comment here.</textarea></br>
+				<textarea id="commentBox" rows="4" cols="50" placeholder="Type your comment here"></textarea></br>
 				<input type="submit" value="Add Comment" class="submit" />
 			</form>
-
-			<p><b>AdamB34:</b> Wow! awesome video!</p>
-			<p><b>McGraw:</b> I have learned soo much...</p>
-			<p><b>Bossman60:</b> Was I supposed to learn something?</p>
-
 		</div>
 		
 		<div class="playlist">
